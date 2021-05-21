@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block page_content %}
+
+<div class="container">
+    <div class="row">
+        <h1>You most closely match the following person:</h1>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-8">
+            <h4>Name: {{name}}</h4>
+            <h4>Age: {{age}}</h4>
+            <h4>Gender: {{gender}}</h4>
+            <h4>Race: {{race}}</h4>
+            <h4>Sexual orientation: {{sexualOrientation}}</h4>
+            <h4>Gender identity: {{genderIdentity}}</h4>
+            <h4>Rank: {{rank}}</h4>
+            <h4>Department: {{department}}</h4>
+            <h4>Function: {{function}}</h4>
+            <h4>Story: {{story}}</h4>
+        </div>
+        <div class="col-6 col-md-4">
+            <img src={{base_image}} alt = {{base_image}} width="250" height="300">
+        </div>
+    </div>
+    
+</div>
+
+
+{% endblock %}
+
+
